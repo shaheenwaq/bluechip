@@ -3,36 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Shaheen Waqibeen</title>
+
+    <title>About Me | Shaheen Waqibeen</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0a0f1c;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #0a0f1c;
+            border-bottom: 1px solid #1e293b;
+            padding: 18px 8%;
+        }
+
+        nav .logo {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .title h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .title h1 span {
+            color: #38bdf8;
+        }
+
+        .title p {
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .content {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            color: #cbd5e1;
+            margin-bottom: 18px;
+        }
+
+        .timeline {
+            display: grid;
+            gap: 20px;
+        }
+
+        .item {
+            border-left: 3px solid #38bdf8;
+            padding: 20px 25px;
+            background: #0f172a;
+            border-radius: 8px;
+        }
+
+        .item h3 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .item p {
+            color: #94a3b8;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+
+            nav ul {
+                float: none;
+                margin-top: 15px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .title h1 {
+                font-size: 38px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="challenge.html">Cyber Challenge</a>
-        <a href="resume.html">Resume</a>
+
+        <a href="index.html" class="logo">SW</a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="challenge.html">Challenge</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+
     </nav>
 
-    <h1>About Me</h1>
 
-    <p>
-        I am developing my career in cybersecurity and building
-        practical skills through hands-on learning and technical projects.
-    </p>
+    <!-- Main Content -->
+    <main class="container">
 
-    <p>
-        My interests include cybersecurity, networking, security operations,
-        and the use of AI tools in cybersecurity.
-    </p>
+        <div class="title">
 
-    <p>
-        My goal is to continue developing my technical skills and build
-        a successful career in cybersecurity.
-    </p>
+            <h1>About <span>Me</span></h1>
+
+            <p>
+                Cybersecurity professional, researcher, and lifelong learner.
+            </p>
+
+        </div>
+
+
+        <!-- Introduction -->
+        <section class="content">
+
+            <h2>Who I Am</h2>
+
+            <p>
+                I am Shaheen Waqibeen, a cybersecurity professional and
+                technology management PhD researcher with a strong interest
+                in cybersecurity, information technology, and secure systems.
+            </p>
+
+            <p>
+                My background combines technology, business, management,
+                cybersecurity, and research. I enjoy understanding how
+                technology works, identifying security challenges, and
+                developing practical approaches to solving them.
+            </p>
+
+            <p>
+                My goal is to continue developing my technical cybersecurity
+                skills while contributing to organizations that value
+                security, innovation, and continuous learning.
+            </p>
+
+        </section>
+
+
+        <!-- Education -->
+        <section class="content">
+
+            <h2>Education</h2>
+
+            <div class="timeline">
+
+                <div class="item">
+
+                    <h3>PhD in Technology Management</h3>
+
+                    <p>
+                        Specialization in Cybersecurity
+                    </p>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3>Cybersecurity Education</h3>
+
+                    <p>
+                        Academic and hands-on training in cybersecurity,
+                        networking, system security, and digital forensics.
+                    </p>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3>Master of Business Administration</h3>
+
+                    <p>
+                        Business administration with a focus on finance
+                        and information technology.
+                    </p>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3>Bachelor's Degree in Economics</h3>
+
+                    <p>
+                        Economics and international trade.
+                    </p>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3>Bachelor's Degree in Media & Communications</h3>
+
+                    <p>
+                        Media and communications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Certifications -->
+        <section class="content">
+
+            <h2>Certifications & Training</h2>
+
+            <p>
+                • CompTIA Security+
+            </p>
+
+            <p>
+                • CompTIA ITF+
+            </p>
+
+            <p>
+                • Google Cybersecurity Professional Certificate
+            </p>
+
+            <p>
+                • Google IT Support Professional Certificate
+            </p>
+
+            <p>
+                • Google AI Essentials
+            </p>
+
+        </section>
+
+
+        <!-- Career Goals -->
+        <section class="content">
+
+            <h2>My Cybersecurity Goals</h2>
+
+            <p>
+                I am focused on building practical experience in cybersecurity
+                operations, network security, security monitoring, digital
+                forensics, vulnerability management, and risk management.
+            </p>
+
+            <p>
+                I am particularly interested in applying cybersecurity
+                frameworks and technologies to real-world organizational
+                security challenges.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        © 2026 Shaheen Waqibeen | Cybersecurity Portfolio
+
+    </footer>
 
 </body>
 </html>
