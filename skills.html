@@ -3,48 +3,464 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | Your Name</title>
+
+    <title>Skills | Shaheen Waqibeen</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0a0f1c;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: rgba(10, 15, 28, 0.98);
+            border-bottom: 1px solid #1e293b;
+            padding: 18px 8%;
+        }
+
+        nav .logo {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-card {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 15px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-6px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.08);
+        }
+
+        .icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .skill-card h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .skill-card p {
+            color: #94a3b8;
+            margin-bottom: 18px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #0f172a;
+            border: 1px solid #334155;
+            color: #cbd5e1;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .certifications {
+            margin-top: 70px;
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 15px;
+            padding: 35px;
+        }
+
+        .certifications h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .cert-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .cert {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .cert strong {
+            color: #ffffff;
+        }
+
+        .cert p {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+
+            nav ul {
+                float: none;
+                margin-top: 15px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="challenge.html">Cyber Challenge</a>
-        <a href="resume.html">Resume</a>
+
+        <a href="index.html" class="logo">SW</a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="challenge.html">Challenge</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+
     </nav>
 
-    <h1>Cybersecurity Skills</h1>
 
-    <h2>Operating Systems</h2>
-    <ul>
-        <li>Windows</li>
-        <li>Linux</li>
-    </ul>
+    <!-- Main -->
+    <main class="container">
 
-    <h2>Networking</h2>
-    <ul>
-        <li>TCP/IP</li>
-        <li>DNS</li>
-        <li>Network Analysis</li>
-    </ul>
+        <section class="hero">
 
-    <h2>Security</h2>
-    <ul>
-        <li>Risk Management</li>
-        <li>Incident Response</li>
-        <li>Security Fundamentals</li>
-    </ul>
+            <h1>My <span>Skills</span></h1>
 
-    <h2>Tools</h2>
-    <ul>
-        <li>Wireshark</li>
-        <li>Nmap</li>
-        <li>GitHub</li>
-    </ul>
+            <p>
+                A combination of cybersecurity knowledge, technical
+                skills, security frameworks, and hands-on technologies.
+            </p>
+
+        </section>
+
+
+        <section class="skills-grid">
+
+
+            <!-- Network Security -->
+            <div class="skill-card">
+
+                <div class="icon">🌐</div>
+
+                <h2>Network Security</h2>
+
+                <p>
+                    Designing, securing, and troubleshooting networks
+                    while identifying common security threats.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">TCP/IP</span>
+                    <span class="tag">IPv4</span>
+                    <span class="tag">IPv6</span>
+                    <span class="tag">DHCP</span>
+                    <span class="tag">NAT</span>
+                    <span class="tag">VPN</span>
+                    <span class="tag">Firewalls</span>
+                    <span class="tag">NAC</span>
+                </div>
+
+            </div>
+
+
+            <!-- Security Operations -->
+            <div class="skill-card">
+
+                <div class="icon">🛡️</div>
+
+                <h2>Security Operations</h2>
+
+                <p>
+                    Security monitoring, threat detection, log analysis,
+                    and incident response concepts.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">SIEM</span>
+                    <span class="tag">Splunk</span>
+                    <span class="tag">Log Analysis</span>
+                    <span class="tag">Threat Detection</span>
+                    <span class="tag">Incident Response</span>
+                </div>
+
+            </div>
+
+
+            <!-- Vulnerability Management -->
+            <div class="skill-card">
+
+                <div class="icon">🔍</div>
+
+                <h2>Vulnerability Management</h2>
+
+                <p>
+                    Identifying vulnerabilities, assessing risk, and
+                    understanding remediation strategies.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Nmap</span>
+                    <span class="tag">OpenVAS</span>
+                    <span class="tag">Vulnerability Scanning</span>
+                    <span class="tag">Risk Assessment</span>
+                </div>
+
+            </div>
+
+
+            <!-- Digital Forensics -->
+            <div class="skill-card">
+
+                <div class="icon">💻</div>
+
+                <h2>Digital Forensics</h2>
+
+                <p>
+                    Investigating digital evidence and analyzing systems
+                    during security investigations.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Autopsy</span>
+                    <span class="tag">Sleuth Kit</span>
+                    <span class="tag">FTK Imager</span>
+                    <span class="tag">OSForensics</span>
+                </div>
+
+            </div>
+
+
+            <!-- Cloud Security -->
+            <div class="skill-card">
+
+                <div class="icon">☁️</div>
+
+                <h2>Cloud & Infrastructure</h2>
+
+                <p>
+                    Understanding cloud environments, virtualization,
+                    identity, and infrastructure security.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">Hyper-V</span>
+                    <span class="tag">VMware</span>
+                    <span class="tag">Proxmox</span>
+                </div>
+
+            </div>
+
+
+            <!-- Frameworks -->
+            <div class="skill-card">
+
+                <div class="icon">📋</div>
+
+                <h2>Security Frameworks</h2>
+
+                <p>
+                    Applying recognized cybersecurity frameworks and
+                    security controls to organizational environments.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">NIST CSF</span>
+                    <span class="tag">NIST SP 800-37</span>
+                    <span class="tag">NIST SP 800-82</span>
+                    <span class="tag">MITRE ATT&CK</span>
+                    <span class="tag">ISA/IEC 62443</span>
+                </div>
+
+            </div>
+
+
+            <!-- Linux -->
+            <div class="skill-card">
+
+                <div class="icon">🐧</div>
+
+                <h2>Linux & Systems</h2>
+
+                <p>
+                    Working with operating systems, command-line tools,
+                    system administration, and security concepts.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Linux</span>
+                    <span class="tag">Windows</span>
+                    <span class="tag">Active Directory</span>
+                    <span class="tag">PowerShell</span>
+                </div>
+
+            </div>
+
+
+            <!-- Security Tools -->
+            <div class="skill-card">
+
+                <div class="icon">⚙️</div>
+
+                <h2>Security Tools</h2>
+
+                <p>
+                    Hands-on exposure to tools used for security testing,
+                    analysis, monitoring, and assessment.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Burp Suite</span>
+                    <span class="tag">OWASP ZAP</span>
+                    <span class="tag">Nmap</span>
+                    <span class="tag">Prowler</span>
+                    <span class="tag">Pacu</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Certifications -->
+        <section class="certifications">
+
+            <h2>Certifications & Training</h2>
+
+            <div class="cert-list">
+
+                <div class="cert">
+                    <strong>CompTIA Security+</strong>
+                    <p>Cybersecurity certification</p>
+                </div>
+
+                <div class="cert">
+                    <strong>CompTIA ITF+</strong>
+                    <p>Information technology fundamentals</p>
+                </div>
+
+                <div class="cert">
+                    <strong>Google Cybersecurity</strong>
+                    <p>Professional Certificate</p>
+                </div>
+
+                <div class="cert">
+                    <strong>Google IT Support</strong>
+                    <p>Professional Certificate</p>
+                </div>
+
+                <div class="cert">
+                    <strong>Google AI Essentials</strong>
+                    <p>Artificial intelligence fundamentals</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Shaheen Waqibeen | Cybersecurity Portfolio
+
+    </footer>
 
 </body>
 </html>
