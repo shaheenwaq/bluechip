@@ -1,32 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Your Name</title>
+
+    <title>Resume | Shaheen Waqibeen</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0a0f1c;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #0a0f1c;
+            border-bottom: 1px solid #1e293b;
+            padding: 18px 8%;
+        }
+
+        nav .logo {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 span {
+            color: #38bdf8;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .download {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .download a {
+            display: inline-block;
+            background: #38bdf8;
+            color: #06111f;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 8px;
+        }
+
+        .download a:hover {
+            background: #7dd3fc;
+        }
+
+        .section {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 15px;
+            padding: 35px;
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            color: #38bdf8;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            color: #cbd5e1;
+            margin-bottom: 12px;
+        }
+
+        .item {
+            margin-bottom: 25px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item h3 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .item .date {
+            color: #38bdf8;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .item p {
+            color: #94a3b8;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #0f172a;
+            border: 1px solid #334155;
+            color: #cbd5e1;
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .cert {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .cert h3 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .cert p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+
+            nav ul {
+                float: none;
+                margin-top: 15px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .header h1 {
+                font-size: 38px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
+
+    <!-- Navigation -->
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="challenge.html">Cyber Challenge</a>
-        <a href="resume.html">Resume</a>
+
+        <a href="index.html" class="logo">SW</a>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="skills.html">Skills</a>
+            </li>
+
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="challenge.html">Challenge</a>
+            </li>
+
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+
+        </ul>
+
     </nav>
 
-    <h1>Resume</h1>
 
-    <p>
-        My professional resume will be available here.
-    </p>
+    <main class="container">
 
-    <p>
-        This page will be updated with my education, certifications,
-        technical skills, cybersecurity projects, and professional experience.
-    </p>
+
+        <!-- Header -->
+
+        <section class="header">
+
+            <h1>
+                Shaheen <span>Waqibeen</span>
+            </h1>
+
+            <p>
+                Cybersecurity Professional | PhD Researcher |
+                Technology Management
+            </p>
+
+            <div class="download">
+
+                <a href="#">
+                    Download Resume PDF
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Professional Summary -->
+
+        <section class="section">
+
+            <h2>Professional Summary</h2>
+
+            <p>
+                Cybersecurity professional and PhD researcher with
+                interdisciplinary experience spanning cybersecurity,
+                information technology, technology management, business,
+                and operations.
+            </p>
+
+            <p>
+                Experienced in cybersecurity fundamentals, network
+                security, security operations, digital forensics,
+                vulnerability assessment, risk management, and
+                cybersecurity frameworks.
+            </p>
+
+            <p>
+                CompTIA Security+ certified with a strong interest in
+                cybersecurity operations, security analysis, risk
+                management, and practical security solutions.
+            </p>
+
+        </section>
+
+
+        <!-- Education -->
+
+        <section class="section">
+
+            <h2>Education</h2>
+
+
+            <div class="item">
+
+                <h3>
+                    PhD in Technology Management
+                </h3>
+
+                <div class="date">
+                    National University
+                </div>
+
+                <p>
+                    Specialization in Cybersecurity.
+                </p>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>
+                    Master of Business Administration
+                </h3>
+
+                <div class="date">
+                    MBA
+                </div>
+
+                <p>
+                    Business administration with emphasis on finance
+                    and information technology.
+                </p>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>
+                    Bachelor's Degree in Economics
+                </h3>
+
+                <div class="date">
+                    Economics & International Trade
+                </div>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>
+                    Bachelor's Degree in Media & Communications
+                </h3>
+
+                <div class="date">
+                    Media & Communications
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Cybersecurity Experience -->
+
+        <section class="section">
+
+            <h2>Cybersecurity & Technical Experience</h2>
+
+
+            <div class="item">
+
+                <h3>
+                    Cybersecurity Projects & Labs
+                </h3>
+
+                <p>
+                    Hands-on work involving network security,
+                    vulnerability assessment, digital forensics,
+                    security monitoring, cloud security, and
+                    cybersecurity frameworks.
+                </p>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>
+                    Security Operations & Analysis
+                </h3>
+
+                <p>
+                    Experience with security concepts involving
+                    SIEM, log analysis, threat detection, incident
+                    response, and security monitoring.
+                </p>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>
+                    Network & Infrastructure
+                </h3>
+
+                <p>
+                    Knowledge of networking, firewalls, VPNs,
+                    virtualization, Windows, Linux, Active Directory,
+                    and infrastructure security.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Certifications -->
+
+        <section class="section">
+
+            <h2>Certifications</h2>
+
+            <div class="certifications">
+
+
+                <div class="cert">
+
+                    <h3>
+                        CompTIA Security+
+                    </h3>
+
+                    <p>
+                        Cybersecurity Certification
+                    </p>
+
+                </div>
+
+
+                <div class="cert">
+
+                    <h3>
+                        CompTIA ITF+
+                    </h3>
+
+                    <p>
+                        IT Fundamentals Certification
+                    </p>
+
+                </div>
+
+
+                <div class="cert">
+
+                    <h3>
+                        Google Cybersecurity
+                    </h3>
+
+                    <p>
+                        Professional Certificate
+                    </p>
+
+                </div>
+
+
+                <div class="cert">
+
+                    <h3>
+                        Google IT Support
+                    </h3>
+
+                    <p>
+                        Professional Certificate
+                    </p>
+
+                </div>
+
+
+                <div class="cert">
+
+                    <h3>
+                        Google AI Essentials
+                    </h3>
+
+                    <p>
+                        AI Fundamentals Certificate
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Technical Skills -->
+
+        <section class="section">
+
+            <h2>Technical Skills</h2>
+
+            <div class="skills">
+
+                <span class="skill">Network Security</span>
+
+                <span class="skill">Firewalls</span>
+
+                <span class="skill">SIEM</span>
+
+                <span class="skill">Splunk</span>
+
+                <span class="skill">Nmap</span>
+
+                <span class="skill">OpenVAS</span>
+
+                <span class="skill">Burp Suite</span>
+
+                <span class="skill">OWASP ZAP</span>
+
+                <span class="skill">Digital Forensics</span>
+
+                <span class="skill">Autopsy</span>
+
+                <span class="skill">Linux</span>
+
+                <span class="skill">Windows</span>
+
+                <span class="skill">Active Directory</span>
+
+                <span class="skill">PowerShell</span>
+
+                <span class="skill">AWS</span>
+
+                <span class="skill">Azure</span>
+
+                <span class="skill">VMware</span>
+
+                <span class="skill">Hyper-V</span>
+
+                <span class="skill">NIST</span>
+
+                <span class="skill">MITRE ATT&CK</span>
+
+                <span class="skill">Risk Management</span>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Shaheen Waqibeen | Cybersecurity Portfolio
+
+    </footer>
+
 
 </body>
+
 </html>
