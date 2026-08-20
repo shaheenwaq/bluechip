@@ -1,35 +1,804 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Your Name</title>
+
+    <title>Projects | Shaheen Waqibeen</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0a0f1c;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: rgba(10, 15, 28, 0.98);
+            border-bottom: 1px solid #1e293b;
+            padding: 18px 8%;
+        }
+
+        nav .logo {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+
+        /* Main Container */
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+
+        /* Page Header */
+
+        .hero {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 18px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+
+        /* Projects Grid */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+
+        /* Project Card */
+
+        .project-card {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+            box-shadow: 0 15px 40px rgba(56, 189, 248, 0.08);
+        }
+
+
+        /* Project Number */
+
+        .project-number {
+            color: #38bdf8;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+
+        /* Project Title */
+
+        .project-card h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+
+        /* Project Description */
+
+        .project-card > p {
+            color: #94a3b8;
+            margin-bottom: 22px;
+        }
+
+
+        /* Technology Tags */
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            background: #0f172a;
+            border: 1px solid #334155;
+            color: #cbd5e1;
+            padding: 6px 11px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+
+        /* Project Information */
+
+        .project-info {
+            border-top: 1px solid #1e293b;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+
+        .project-info h3 {
+            color: #38bdf8;
+            font-size: 16px;
+            margin-bottom: 8px;
+            margin-top: 15px;
+        }
+
+        .project-info ul {
+            padding-left: 20px;
+            color: #94a3b8;
+        }
+
+        .project-info li {
+            margin-bottom: 6px;
+        }
+
+
+        /* Project Button */
+
+        .project-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 18px;
+            border: 1px solid #38bdf8;
+            border-radius: 7px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .project-button:hover {
+            background: #38bdf8;
+            color: #06111f;
+        }
+
+
+        /* Coming Soon */
+
+        .coming-soon {
+            margin-top: 60px;
+            text-align: center;
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 45px 25px;
+        }
+
+        .coming-soon h2 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .coming-soon p {
+            color: #94a3b8;
+            max-width: 650px;
+            margin: auto;
+        }
+
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+
+
+        /* Mobile */
+
+        @media (max-width: 850px) {
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            nav ul {
+                float: none;
+                margin-top: 15px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
+
+    <!-- Navigation -->
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="challenge.html">Cyber Challenge</a>
-        <a href="resume.html">Resume</a>
+
+        <a href="index.html" class="logo">SW</a>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="skills.html">Skills</a>
+            </li>
+
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="challenge.html">Challenge</a>
+            </li>
+
+            <li>
+                <a href="resume.html">Resume</a>
+            </li>
+
+        </ul>
+
     </nav>
 
-    <h1>Cybersecurity Projects</h1>
 
-    <p>
-        This page will document selected cybersecurity projects,
-        labs, and technical work completed throughout my studies.
-    </p>
+    <!-- Main Content -->
 
-    <h2>Projects Coming Soon</h2>
+    <main class="container">
 
-    <p>
-        I will continue adding cybersecurity projects and documenting
-        the tools, techniques, results, and lessons learned.
-    </p>
+
+        <!-- Header -->
+
+        <section class="hero">
+
+            <h1>
+                My <span>Projects</span>
+            </h1>
+
+            <p>
+                Hands-on cybersecurity projects, technical labs,
+                security investigations, and practical learning
+                experiences.
+            </p>
+
+        </section>
+
+
+        <!-- Projects -->
+
+        <section class="projects-grid">
+
+
+            <!-- Project 1 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    PROJECT 01
+                </div>
+
+                <h2>
+                    Network Security Lab
+                </h2>
+
+                <p>
+                    Enterprise network security project focused on
+                    network architecture, segmentation, firewall
+                    controls, secure communication, and network defense.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Cisco</span>
+                    <span class="tag">TCP/IP</span>
+                    <span class="tag">Firewalls</span>
+                    <span class="tag">VPN</span>
+                    <span class="tag">Network Security</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>What I Did</h3>
+
+                    <ul>
+
+                        <li>
+                            Designed an enterprise network topology.
+                        </li>
+
+                        <li>
+                            Applied network segmentation concepts.
+                        </li>
+
+                        <li>
+                            Analyzed firewall and security controls.
+                        </li>
+
+                        <li>
+                            Evaluated common network security risks.
+                        </li>
+
+                    </ul>
+
+                    <h3>Key Outcome</h3>
+
+                    <ul>
+
+                        <li>
+                            Improved understanding of secure network
+                            architecture and defensive controls.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <a href="#" class="project-button">
+                    View Project →
+                </a>
+
+            </article>
+
+
+            <!-- Project 2 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    PROJECT 02
+                </div>
+
+                <h2>
+                    Digital Forensics Investigation
+                </h2>
+
+                <p>
+                    Digital forensic investigation focused on collecting,
+                    examining, and interpreting digital evidence.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Autopsy</span>
+                    <span class="tag">Sleuth Kit</span>
+                    <span class="tag">FTK Imager</span>
+                    <span class="tag">Forensics</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>What I Did</h3>
+
+                    <ul>
+
+                        <li>
+                            Examined digital evidence.
+                        </li>
+
+                        <li>
+                            Analyzed file-system artifacts.
+                        </li>
+
+                        <li>
+                            Identified relevant forensic evidence.
+                        </li>
+
+                        <li>
+                            Documented investigation findings.
+                        </li>
+
+                    </ul>
+
+                    <h3>Key Outcome</h3>
+
+                    <ul>
+
+                        <li>
+                            Developed practical knowledge of
+                            digital forensic investigation.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <a href="#" class="project-button">
+                    View Project →
+                </a>
+
+            </article>
+
+
+            <!-- Project 3 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    PROJECT 03
+                </div>
+
+                <h2>
+                    Vulnerability Assessment
+                </h2>
+
+                <p>
+                    Security assessment project focused on discovering
+                    vulnerabilities and evaluating potential security risks.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Nmap</span>
+                    <span class="tag">OpenVAS</span>
+                    <span class="tag">CVEs</span>
+                    <span class="tag">Risk Assessment</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>What I Did</h3>
+
+                    <ul>
+
+                        <li>
+                            Performed network reconnaissance.
+                        </li>
+
+                        <li>
+                            Identified potential vulnerabilities.
+                        </li>
+
+                        <li>
+                            Reviewed vulnerability severity.
+                        </li>
+
+                        <li>
+                            Considered remediation strategies.
+                        </li>
+
+                    </ul>
+
+                    <h3>Key Outcome</h3>
+
+                    <ul>
+
+                        <li>
+                            Strengthened vulnerability identification
+                            and risk assessment skills.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <a href="#" class="project-button">
+                    View Project →
+                </a>
+
+            </article>
+
+
+            <!-- Project 4 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    PROJECT 04
+                </div>
+
+                <h2>
+                    Splunk Security Monitoring
+                </h2>
+
+                <p>
+                    SIEM-based security monitoring project involving
+                    log analysis, event investigation, and threat detection.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Splunk</span>
+                    <span class="tag">SIEM</span>
+                    <span class="tag">Log Analysis</span>
+                    <span class="tag">Threat Detection</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>What I Did</h3>
+
+                    <ul>
+
+                        <li>
+                            Analyzed security logs.
+                        </li>
+
+                        <li>
+                            Investigated suspicious events.
+                        </li>
+
+                        <li>
+                            Practiced SIEM-based monitoring.
+                        </li>
+
+                        <li>
+                            Studied security alert investigation.
+                        </li>
+
+                    </ul>
+
+                    <h3>Key Outcome</h3>
+
+                    <ul>
+
+                        <li>
+                            Improved understanding of SOC monitoring
+                            and security event analysis.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <a href="#" class="project-button">
+                    View Project →
+                </a>
+
+            </article>
+
+
+            <!-- Project 5 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    PROJECT 05
+                </div>
+
+                <h2>
+                    Cloud Security Assessment
+                </h2>
+
+                <p>
+                    Cloud security project focused on identity,
+                    access management, permissions, and secure
+                    cloud configurations.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">AWS</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">IAM</span>
+                    <span class="tag">Cloud Security</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>What I Did</h3>
+
+                    <ul>
+
+                        <li>
+                            Reviewed cloud security configurations.
+                        </li>
+
+                        <li>
+                            Examined identity and access controls.
+                        </li>
+
+                        <li>
+                            Studied cloud security risks.
+                        </li>
+
+                        <li>
+                            Evaluated security best practices.
+                        </li>
+
+                    </ul>
+
+                    <h3>Key Outcome</h3>
+
+                    <ul>
+
+                        <li>
+                            Developed foundational cloud security
+                            assessment skills.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <a href="#" class="project-button">
+                    View Project →
+                </a>
+
+            </article>
+
+
+            <!-- Project 6 -->
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    PROJECT 06
+                </div>
+
+                <h2>
+                    Cybersecurity Framework Analysis
+                </h2>
+
+                <p>
+                    Security governance project focused on cybersecurity
+                    frameworks, risk management, and security controls.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">NIST CSF</span>
+                    <span class="tag">MITRE ATT&CK</span>
+                    <span class="tag">Risk Management</span>
+                    <span class="tag">Governance</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>What I Did</h3>
+
+                    <ul>
+
+                        <li>
+                            Studied cybersecurity frameworks.
+                        </li>
+
+                        <li>
+                            Mapped threats to security controls.
+                        </li>
+
+                        <li>
+                            Analyzed organizational security risks.
+                        </li>
+
+                        <li>
+                            Evaluated security governance concepts.
+                        </li>
+
+                    </ul>
+
+                    <h3>Key Outcome</h3>
+
+                    <ul>
+
+                        <li>
+                            Strengthened understanding of cybersecurity
+                            governance and risk management.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <a href="#" class="project-button">
+                    View Project →
+                </a>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- Future Projects -->
+
+        <section class="coming-soon">
+
+            <h2>
+                More Projects Coming Soon
+            </h2>
+
+            <p>
+                This portfolio will continue to grow with additional
+                cybersecurity labs, research projects, security
+                investigations, and technical work.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 Shaheen Waqibeen | Cybersecurity Portfolio
+
+    </footer>
+
 
 </body>
+
 </html>
