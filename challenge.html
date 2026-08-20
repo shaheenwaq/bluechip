@@ -3,34 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Challenge | Your Name</title>
+
+    <title>Cybersecurity Challenge | Shaheen Waqibeen</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0a0f1c;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #0a0f1c;
+            border-bottom: 1px solid #1e293b;
+            padding: 18px 8%;
+        }
+
+        nav .logo {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .section {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 15px;
+            padding: 35px;
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            color: #38bdf8;
+            margin-bottom: 18px;
+        }
+
+        .section p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .timeline {
+            display: grid;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .timeline-item {
+            background: #0f172a;
+            border-left: 3px solid #38bdf8;
+            padding: 22px;
+            border-radius: 8px;
+        }
+
+        .timeline-item h3 {
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            margin: 0;
+            color: #94a3b8;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .skill {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .skill h3 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+
+        .skill p {
+            color: #94a3b8;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .achievement {
+            text-align: center;
+            padding: 45px 25px;
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #111827
+            );
+        }
+
+        .achievement h2 {
+            font-size: 30px;
+        }
+
+        .achievement .number {
+            font-size: 55px;
+            font-weight: bold;
+            color: #38bdf8;
+            margin: 10px 0;
+        }
+
+        .achievement p {
+            color: #94a3b8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+
+            nav ul {
+                float: none;
+                margin-top: 15px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="challenge.html">Cyber Challenge</a>
-        <a href="resume.html">Resume</a>
+
+        <a href="index.html" class="logo">SW</a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="challenge.html">Challenge</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+
     </nav>
 
-    <h1>Cyber Challenge</h1>
 
-    <p>
-        This page will document my Cyber Challenge experience,
-        including cybersecurity skills, problem-solving strategies,
-        teamwork, and lessons learned.
-    </p>
+    <main class="container">
 
-    <h2>Coming Soon</h2>
+        <!-- Hero -->
+        <section class="hero">
 
-    <p>
-        I will add appropriate information about my Cyber Challenge
-        experience as I continue my cybersecurity training.
-    </p>
+            <h1>
+                Cybersecurity <span>Challenge</span>
+            </h1>
+
+            <p>
+                Developing practical cybersecurity knowledge through
+                hands-on learning, technical exercises, and professional
+                development.
+            </p>
+
+        </section>
+
+
+        <!-- Overview -->
+        <section class="section">
+
+            <h2>About the Challenge</h2>
+
+            <p>
+                The Cybersecurity Challenge provided an opportunity to
+                strengthen my practical understanding of cybersecurity
+                concepts and apply technical knowledge to real-world
+                security scenarios.
+            </p>
+
+            <p>
+                Through structured learning, hands-on activities, and
+                security-focused exercises, I continued developing my
+                ability to analyze security problems and think like a
+                cybersecurity professional.
+            </p>
+
+        </section>
+
+
+        <!-- Learning Journey -->
+        <section class="section">
+
+            <h2>Learning Journey</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h3>Cybersecurity Fundamentals</h3>
+
+                    <p>
+                        Strengthened knowledge of core cybersecurity
+                        concepts, security principles, threats,
+                        vulnerabilities, and controls.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>Network Security</h3>
+
+                    <p>
+                        Practiced understanding network architecture,
+                        network threats, firewalls, secure communication,
+                        and defensive security techniques.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>Security Operations</h3>
+
+                    <p>
+                        Developed familiarity with monitoring,
+                        detection, log analysis, SIEM concepts,
+                        and incident response.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>Security Analysis</h3>
+
+                    <p>
+                        Applied analytical thinking to security scenarios,
+                        identifying risks and determining appropriate
+                        security controls.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+        <section class="section">
+
+            <h2>Skills Developed</h2>
+
+            <div class="skills">
+
+                <div class="skill">
+
+                    <h3>Threat Analysis</h3>
+
+                    <p>
+                        Identifying threats, vulnerabilities, and
+                        potential security impacts.
+                    </p>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <h3>Risk Assessment</h3>
+
+                    <p>
+                        Understanding cybersecurity risk and
+                        appropriate mitigation strategies.
+                    </p>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <h3>Problem Solving</h3>
+
+                    <p>
+                        Analyzing technical scenarios and developing
+                        practical security solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <h3>Security Awareness</h3>
+
+                    <p>
+                        Understanding security principles and their
+                        application in organizational environments.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Achievement -->
+        <section class="section achievement">
+
+            <h2>CompTIA Security+ Achievement</h2>
+
+            <div class="number">
+                818
+            </div>
+
+            <p>
+                CompTIA Security+ exam score
+            </p>
+
+            <p>
+                Demonstrating knowledge across core cybersecurity
+                domains and security practices.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Shaheen Waqibeen | Cybersecurity Portfolio
+
+    </footer>
 
 </body>
 </html>
